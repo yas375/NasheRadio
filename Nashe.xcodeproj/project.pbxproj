@@ -1,0 +1,262 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		50C44F8E14EFBC9F003B396A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50C44F8D14EFBC9F003B396A /* UIKit.framework */; };
+		50C44F9014EFBC9F003B396A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50C44F8F14EFBC9F003B396A /* Foundation.framework */; };
+		50C44F9214EFBC9F003B396A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50C44F9114EFBC9F003B396A /* CoreGraphics.framework */; };
+		50C44F9814EFBC9F003B396A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 50C44F9614EFBC9F003B396A /* InfoPlist.strings */; };
+		50C44F9A14EFBC9F003B396A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C44F9914EFBC9F003B396A /* main.m */; };
+		50C44F9E14EFBC9F003B396A /* NRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C44F9D14EFBC9F003B396A /* NRAppDelegate.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		50C44F8914EFBC9F003B396A /* Nashe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nashe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		50C44F8D14EFBC9F003B396A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		50C44F8F14EFBC9F003B396A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		50C44F9114EFBC9F003B396A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		50C44F9514EFBC9F003B396A /* Nashe-Info.plist */ = {isa = PBXFileReference; path = "Nashe-Info.plist"; sourceTree = "<group>"; };
+		50C44F9714EFBC9F003B396A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		50C44F9914EFBC9F003B396A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		50C44F9B14EFBC9F003B396A /* Nashe-Prefix.pch */ = {isa = PBXFileReference; path = "Nashe-Prefix.pch"; sourceTree = "<group>"; };
+		50C44F9C14EFBC9F003B396A /* NRAppDelegate.h */ = {isa = PBXFileReference; path = NRAppDelegate.h; sourceTree = "<group>"; };
+		50C44F9D14EFBC9F003B396A /* NRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NRAppDelegate.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		50C44F8614EFBC9F003B396A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50C44F8E14EFBC9F003B396A /* UIKit.framework in Frameworks */,
+				50C44F9014EFBC9F003B396A /* Foundation.framework in Frameworks */,
+				50C44F9214EFBC9F003B396A /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		50C44F7E14EFBC9F003B396A = {
+			isa = PBXGroup;
+			children = (
+				50C44F9314EFBC9F003B396A /* Nashe */,
+				50C44F8C14EFBC9F003B396A /* Frameworks */,
+				50C44F8A14EFBC9F003B396A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		50C44F8A14EFBC9F003B396A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				50C44F8914EFBC9F003B396A /* Nashe.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		50C44F8C14EFBC9F003B396A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				50C44F8D14EFBC9F003B396A /* UIKit.framework */,
+				50C44F8F14EFBC9F003B396A /* Foundation.framework */,
+				50C44F9114EFBC9F003B396A /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		50C44F9314EFBC9F003B396A /* Nashe */ = {
+			isa = PBXGroup;
+			children = (
+				50C44F9C14EFBC9F003B396A /* NRAppDelegate.h */,
+				50C44F9D14EFBC9F003B396A /* NRAppDelegate.m */,
+				50C44F9414EFBC9F003B396A /* Supporting Files */,
+			);
+			path = Nashe;
+			sourceTree = "<group>";
+		};
+		50C44F9414EFBC9F003B396A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				50C44F9514EFBC9F003B396A /* Nashe-Info.plist */,
+				50C44F9614EFBC9F003B396A /* InfoPlist.strings */,
+				50C44F9914EFBC9F003B396A /* main.m */,
+				50C44F9B14EFBC9F003B396A /* Nashe-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		50C44F8814EFBC9F003B396A /* Nashe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50C44FA114EFBC9F003B396A /* Build configuration list for PBXNativeTarget "Nashe" */;
+			buildPhases = (
+				50C44F8514EFBC9F003B396A /* Sources */,
+				50C44F8614EFBC9F003B396A /* Frameworks */,
+				50C44F8714EFBC9F003B396A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Nashe;
+			productName = Nashe;
+			productReference = 50C44F8914EFBC9F003B396A /* Nashe.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		50C44F8014EFBC9F003B396A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = NR;
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 50C44F8314EFBC9F003B396A /* Build configuration list for PBXProject "Nashe" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 50C44F7E14EFBC9F003B396A;
+			productRefGroup = 50C44F8A14EFBC9F003B396A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				50C44F8814EFBC9F003B396A /* Nashe */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		50C44F8714EFBC9F003B396A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50C44F9814EFBC9F003B396A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		50C44F8514EFBC9F003B396A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50C44F9A14EFBC9F003B396A /* main.m in Sources */,
+				50C44F9E14EFBC9F003B396A /* NRAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		50C44F9614EFBC9F003B396A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50C44F9714EFBC9F003B396A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		50C44F9F14EFBC9F003B396A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		50C44FA014EFBC9F003B396A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		50C44FA214EFBC9F003B396A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Nashe/Nashe-Prefix.pch";
+				INFOPLIST_FILE = "Nashe/Nashe-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		50C44FA314EFBC9F003B396A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Nashe/Nashe-Prefix.pch";
+				INFOPLIST_FILE = "Nashe/Nashe-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		50C44F8314EFBC9F003B396A /* Build configuration list for PBXProject "Nashe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50C44F9F14EFBC9F003B396A /* Debug */,
+				50C44FA014EFBC9F003B396A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50C44FA114EFBC9F003B396A /* Build configuration list for PBXNativeTarget "Nashe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50C44FA214EFBC9F003B396A /* Debug */,
+				50C44FA314EFBC9F003B396A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 50C44F8014EFBC9F003B396A /* Project object */;
+}
