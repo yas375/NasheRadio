@@ -7,25 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5090859E14F19DCE00886EF5 /* NRRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5090859D14F19DCE00886EF5 /* NRRootViewController.m */; };
 		50C44F8E14EFBC9F003B396A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50C44F8D14EFBC9F003B396A /* UIKit.framework */; };
 		50C44F9014EFBC9F003B396A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50C44F8F14EFBC9F003B396A /* Foundation.framework */; };
 		50C44F9214EFBC9F003B396A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50C44F9114EFBC9F003B396A /* CoreGraphics.framework */; };
 		50C44F9814EFBC9F003B396A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 50C44F9614EFBC9F003B396A /* InfoPlist.strings */; };
 		50C44F9A14EFBC9F003B396A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C44F9914EFBC9F003B396A /* main.m */; };
 		50C44F9E14EFBC9F003B396A /* NRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C44F9D14EFBC9F003B396A /* NRAppDelegate.m */; };
+		50C44FA514EFBCC8003B396A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50C44FA414EFBCC8003B396A /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5090859C14F19DCE00886EF5 /* NRRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NRRootViewController.h; path = Controllers/NRRootViewController.h; sourceTree = "<group>"; };
+		5090859D14F19DCE00886EF5 /* NRRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NRRootViewController.m; path = Controllers/NRRootViewController.m; sourceTree = "<group>"; };
 		50C44F8914EFBC9F003B396A /* Nashe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nashe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50C44F8D14EFBC9F003B396A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		50C44F8F14EFBC9F003B396A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		50C44F9114EFBC9F003B396A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		50C44F9514EFBC9F003B396A /* Nashe-Info.plist */ = {isa = PBXFileReference; path = "Nashe-Info.plist"; sourceTree = "<group>"; };
+		50C44F9514EFBC9F003B396A /* Nashe-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Nashe-Info.plist"; sourceTree = "<group>"; };
 		50C44F9714EFBC9F003B396A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		50C44F9914EFBC9F003B396A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		50C44F9B14EFBC9F003B396A /* Nashe-Prefix.pch */ = {isa = PBXFileReference; path = "Nashe-Prefix.pch"; sourceTree = "<group>"; };
-		50C44F9C14EFBC9F003B396A /* NRAppDelegate.h */ = {isa = PBXFileReference; path = NRAppDelegate.h; sourceTree = "<group>"; };
+		50C44F9B14EFBC9F003B396A /* Nashe-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Nashe-Prefix.pch"; sourceTree = "<group>"; };
+		50C44F9C14EFBC9F003B396A /* NRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NRAppDelegate.h; sourceTree = "<group>"; };
 		50C44F9D14EFBC9F003B396A /* NRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NRAppDelegate.m; sourceTree = "<group>"; };
+		50C44FA414EFBCC8003B396A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50C44FA514EFBCC8003B396A /* AVFoundation.framework in Frameworks */,
 				50C44F8E14EFBC9F003B396A /* UIKit.framework in Frameworks */,
 				50C44F9014EFBC9F003B396A /* Foundation.framework in Frameworks */,
 				50C44F9214EFBC9F003B396A /* CoreGraphics.framework in Frameworks */,
@@ -42,9 +48,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5090859A14F19D9800886EF5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5090859C14F19DCE00886EF5 /* NRRootViewController.h */,
+				5090859D14F19DCE00886EF5 /* NRRootViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 		50C44F7E14EFBC9F003B396A = {
 			isa = PBXGroup;
 			children = (
+				5090859A14F19D9800886EF5 /* Controllers */,
 				50C44F9314EFBC9F003B396A /* Nashe */,
 				50C44F8C14EFBC9F003B396A /* Frameworks */,
 				50C44F8A14EFBC9F003B396A /* Products */,
@@ -62,9 +78,10 @@
 		50C44F8C14EFBC9F003B396A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				50C44F8D14EFBC9F003B396A /* UIKit.framework */,
-				50C44F8F14EFBC9F003B396A /* Foundation.framework */,
+				50C44FA414EFBCC8003B396A /* AVFoundation.framework */,
 				50C44F9114EFBC9F003B396A /* CoreGraphics.framework */,
+				50C44F8F14EFBC9F003B396A /* Foundation.framework */,
+				50C44F8D14EFBC9F003B396A /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -154,6 +171,7 @@
 			files = (
 				50C44F9A14EFBC9F003B396A /* main.m in Sources */,
 				50C44F9E14EFBC9F003B396A /* NRAppDelegate.m in Sources */,
+				5090859E14F19DCE00886EF5 /* NRRootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,10 +235,13 @@
 		50C44FA214EFBC9F003B396A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Nashe/Nashe-Prefix.pch";
 				INFOPLIST_FILE = "Nashe/Nashe-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -228,10 +249,13 @@
 		50C44FA314EFBC9F003B396A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Nashe/Nashe-Prefix.pch";
 				INFOPLIST_FILE = "Nashe/Nashe-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -255,6 +279,7 @@
 				50C44FA314EFBC9F003B396A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
