@@ -12,5 +12,6 @@
 @interface NRRootViewController : UIViewController
 
 @property (strong, nonatomic) AVPlayer *player;
+@property (nonatomic, retain) UILabel *titleLabel;
 
 @end
