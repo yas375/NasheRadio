@@ -9,10 +9,11 @@
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
 
-@interface NRRootViewController : UIViewController {
+@interface NRRootViewController : UIViewController <UITableViewDataSource, UITableViewDelegate> {
     NSMutableDictionary *nowPlayingInfo;
 }
 
 @property (strong, nonatomic) AVPlayer *player;
+@property (strong, nonatomic) UITableView *tableView;
 
 @end

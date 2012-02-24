@@ -17,6 +17,7 @@ static void *MyPlayerTimedMetadataObserverContext = &MyPlayerTimedMetadataObserv
 @implementation NRRootViewController
 
 @synthesize player = _player;
+@synthesize tableView = _tableView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil
                bundle:(NSBundle *)nibBundleOrNil {
@@ -58,6 +59,26 @@ static void *MyPlayerTimedMetadataObserverContext = &MyPlayerTimedMetadataObserv
     [super dealloc];
 }
 
+#pragma mark - View lifecycle
+
+- (void)loadView {
+    [super loadView];
+
+    UITableView *tableView = [[UITableView alloc] initWithFrame:self.view.bounds
+                                                          style:UITableViewStyleGrouped];
+    UILabel *header = [[[UILabel alloc] init] autorelease];
+    header.text = @"НАШЕ радио";
+    header.textAlignment = UITextAlignmentCenter;
+    header.font = [UIFont systemFontOfSize:17.0];
+    [header sizeToFit];
+    tableView.tableHeaderView = header;
+    tableView.delegate = self;
+    tableView.dataSource = self;
+    [self.view addSubview:tableView];
+    self.tableView = [tableView autorelease];
+}
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
@@ -67,6 +88,7 @@ static void *MyPlayerTimedMetadataObserverContext = &MyPlayerTimedMetadataObserv
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
+    self.tableView = nil;
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -84,7 +106,6 @@ static void *MyPlayerTimedMetadataObserverContext = &MyPlayerTimedMetadataObserv
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
-
 
 - (BOOL)canBecomeFirstResponder {
     return YES;
@@ -140,6 +161,78 @@ static void *MyPlayerTimedMetadataObserverContext = &MyPlayerTimedMetadataObserv
 	} else {
         [super observeValueForKeyPath:keyPath ofObject:object change:change context:context];
     }    
+}
+
+#pragma mark - UITableViewDataSource
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 2;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    if (section == 0) {
+        return 6;
+    } else {
+        return 1;
+    }
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView
+         cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    static NSString *cellIdentifier = @"Cell";
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    if (cell == nil) {
+        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle
+                                       reuseIdentifier:cellIdentifier] autorelease];
+    }
+    if (indexPath.section == 0) {
+        int bitrate;
+        switch (indexPath.row) {
+            case 0:
+                bitrate = 192;
+                break;
+            case 1:
+                bitrate = 128;
+                break;
+            case 2:
+                bitrate = 96;
+                break;
+            case 3:
+                bitrate = 64;
+                break;
+            case 4:
+                bitrate = 48;
+                break;
+            case 5:
+                bitrate = 32;
+                break;
+                
+            default:
+                break;
+        }
+        cell.textLabel.text = [NSString stringWithFormat:@"%d kbps", bitrate];
+        cell.imageView.image = [UIImage imageNamed:@"control-pause.png"];
+        cell.detailTextLabel.text = [NSString stringWithFormat:@"~%.1f Mb/час", ((bitrate / 8.0) * 3600) / 1024];
+    } else {
+        cell.textLabel.text = @"Убрать рекламу";
+        cell.detailTextLabel.text = @"Поддержи нашего разработчика!";
+    }
+    
+    return cell;
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    if (section == 0) {
+        return @"Качество";
+    } else {
+        return nil;
+    }
+}
+
+#pragma mark - UITableViewDelegate
+- (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath {
+
 }
 
 @end

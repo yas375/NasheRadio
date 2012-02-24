@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		5041522814F36105003C1BDA /* NRRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5041522614F36105003C1BDA /* NRRootViewController.m */; };
-		5041522914F36105003C1BDA /* NRRootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5041522714F36105003C1BDA /* NRRootViewController.xib */; };
 		5041522B14F4C1E7003C1BDA /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5041522A14F4C1E7003C1BDA /* MediaPlayer.framework */; };
 		507E63FE14F771A500D38050 /* artwork.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 507E63FD14F771A500D38050 /* artwork.jpg */; };
 		507E640514F771EC00D38050 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 507E640314F771EC00D38050 /* icon.png */; };
@@ -20,12 +19,12 @@
 		50C44F9A14EFBC9F003B396A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C44F9914EFBC9F003B396A /* main.m */; };
 		50C44F9E14EFBC9F003B396A /* NRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C44F9D14EFBC9F003B396A /* NRAppDelegate.m */; };
 		50C44FA514EFBCC8003B396A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50C44FA414EFBCC8003B396A /* AVFoundation.framework */; };
+		50F1751D14F7E9FE00FF5764 /* control-pause.png in Resources */ = {isa = PBXBuildFile; fileRef = 50F1751C14F7E9FE00FF5764 /* control-pause.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5041522514F36105003C1BDA /* NRRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NRRootViewController.h; path = Controllers/NRRootViewController.h; sourceTree = "<group>"; };
 		5041522614F36105003C1BDA /* NRRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NRRootViewController.m; path = Controllers/NRRootViewController.m; sourceTree = "<group>"; };
-		5041522714F36105003C1BDA /* NRRootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NRRootViewController.xib; path = Controllers/NRRootViewController.xib; sourceTree = "<group>"; };
 		5041522A14F4C1E7003C1BDA /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		507E63FD14F771A500D38050 /* artwork.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = artwork.jpg; path = Resources/artwork.jpg; sourceTree = "<group>"; };
 		507E640314F771EC00D38050 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = Resources/icon.png; sourceTree = "<group>"; };
@@ -41,6 +40,7 @@
 		50C44F9C14EFBC9F003B396A /* NRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NRAppDelegate.h; sourceTree = "<group>"; };
 		50C44F9D14EFBC9F003B396A /* NRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NRAppDelegate.m; sourceTree = "<group>"; };
 		50C44FA414EFBCC8003B396A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		50F1751C14F7E9FE00FF5764 /* control-pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "control-pause.png"; path = "Resources/control-pause.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +64,7 @@
 			children = (
 				507E63FD14F771A500D38050 /* artwork.jpg */,
 				507E640314F771EC00D38050 /* icon.png */,
+				50F1751C14F7E9FE00FF5764 /* control-pause.png */,
 				507E640414F771EC00D38050 /* icon@2x.png */,
 			);
 			name = Resources;
@@ -74,7 +75,6 @@
 			children = (
 				5041522514F36105003C1BDA /* NRRootViewController.h */,
 				5041522614F36105003C1BDA /* NRRootViewController.m */,
-				5041522714F36105003C1BDA /* NRRootViewController.xib */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -183,10 +183,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				50C44F9814EFBC9F003B396A /* InfoPlist.strings in Resources */,
-				5041522914F36105003C1BDA /* NRRootViewController.xib in Resources */,
 				507E63FE14F771A500D38050 /* artwork.jpg in Resources */,
 				507E640514F771EC00D38050 /* icon.png in Resources */,
 				507E640614F771EC00D38050 /* icon@2x.png in Resources */,
+				50F1751D14F7E9FE00FF5764 /* control-pause.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
