@@ -1,17 +1,18 @@
 //
-//  NRRootViewControllerViewController.h
+//  NRRootViewController.h
 //  Nashe
 //
-//  Created by Victor Ilyukevich on 20.02.12.
+//  Created by Victor Ilyukevich on 21.02.12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
 
-@interface NRRootViewController : UIViewController
+@interface NRRootViewController : UIViewController {
+    NSMutableDictionary *nowPlayingInfo;
+}
 
 @property (strong, nonatomic) AVPlayer *player;
-@property (nonatomic, retain) UILabel *titleLabel;
 
 @end
