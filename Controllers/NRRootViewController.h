@@ -8,12 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
+#import "NRPlayerView.h"
 
-@interface NRRootViewController : UIViewController <UITableViewDataSource, UITableViewDelegate> {
+@interface NRRootViewController : UIViewController <NRPlayerViewDelegate> {
     NSMutableDictionary *nowPlayingInfo;
 }
 
-@property (strong, nonatomic) AVPlayer *player;
-@property (strong, nonatomic) UITableView *tableView;
+@property (strong, nonatomic) AVPlayer *player; // TODO: move into separate singleton
+@property (nonatomic, retain) NRPlayerView *playerView;
 
 @end

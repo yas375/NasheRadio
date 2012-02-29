@@ -12,6 +12,7 @@
 		507E63FE14F771A500D38050 /* artwork.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 507E63FD14F771A500D38050 /* artwork.jpg */; };
 		507E640514F771EC00D38050 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 507E640314F771EC00D38050 /* icon.png */; };
 		507E640614F771EC00D38050 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 507E640414F771EC00D38050 /* icon@2x.png */; };
+		509F5D1314FE87FD00905B07 /* NRPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 509F5D1214FE87FD00905B07 /* NRPlayerView.m */; };
 		50C44F8E14EFBC9F003B396A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50C44F8D14EFBC9F003B396A /* UIKit.framework */; };
 		50C44F9014EFBC9F003B396A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50C44F8F14EFBC9F003B396A /* Foundation.framework */; };
 		50C44F9214EFBC9F003B396A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50C44F9114EFBC9F003B396A /* CoreGraphics.framework */; };
@@ -29,6 +30,9 @@
 		507E63FD14F771A500D38050 /* artwork.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = artwork.jpg; path = Resources/artwork.jpg; sourceTree = "<group>"; };
 		507E640314F771EC00D38050 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = Resources/icon.png; sourceTree = "<group>"; };
 		507E640414F771EC00D38050 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon@2x.png"; path = "Resources/icon@2x.png"; sourceTree = "<group>"; };
+		509F5D1114FE87FD00905B07 /* NRPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NRPlayerView.h; path = Views/NRPlayerView.h; sourceTree = "<group>"; };
+		509F5D1214FE87FD00905B07 /* NRPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NRPlayerView.m; path = Views/NRPlayerView.m; sourceTree = "<group>"; };
+		509F5D1414FE8EDA00905B07 /* NRViewDefinitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NRViewDefinitions.h; sourceTree = "<group>"; };
 		50C44F8914EFBC9F003B396A /* НАШЕ радио.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "НАШЕ радио.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		50C44F8D14EFBC9F003B396A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		50C44F8F14EFBC9F003B396A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -79,6 +83,15 @@
 			name = Controllers;
 			sourceTree = "<group>";
 		};
+		509F5D0F14FE87D500905B07 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				509F5D1114FE87FD00905B07 /* NRPlayerView.h */,
+				509F5D1214FE87FD00905B07 /* NRPlayerView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		50C44F7E14EFBC9F003B396A = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +100,7 @@
 				50C44F9314EFBC9F003B396A /* Nashe */,
 				50C44F8A14EFBC9F003B396A /* Products */,
 				507E63F714F7717D00D38050 /* Resources */,
+				509F5D0F14FE87D500905B07 /* Views */,
 			);
 			sourceTree = "<group>";
 		};
@@ -116,6 +130,7 @@
 				50C44F9C14EFBC9F003B396A /* NRAppDelegate.h */,
 				50C44F9D14EFBC9F003B396A /* NRAppDelegate.m */,
 				50C44F9414EFBC9F003B396A /* Supporting Files */,
+				509F5D1414FE8EDA00905B07 /* NRViewDefinitions.h */,
 			);
 			path = Nashe;
 			sourceTree = "<group>";
@@ -200,6 +215,7 @@
 				50C44F9A14EFBC9F003B396A /* main.m in Sources */,
 				50C44F9E14EFBC9F003B396A /* NRAppDelegate.m in Sources */,
 				5041522814F36105003C1BDA /* NRRootViewController.m in Sources */,
+				509F5D1314FE87FD00905B07 /* NRPlayerView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
