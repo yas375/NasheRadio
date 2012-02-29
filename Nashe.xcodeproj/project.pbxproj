@@ -12,6 +12,7 @@
 		507E63FE14F771A500D38050 /* artwork.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 507E63FD14F771A500D38050 /* artwork.jpg */; };
 		507E640514F771EC00D38050 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 507E640314F771EC00D38050 /* icon.png */; };
 		507E640614F771EC00D38050 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 507E640414F771EC00D38050 /* icon@2x.png */; };
+		508EF46E14FEA90700B3F9D2 /* NRPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 508EF46D14FEA90700B3F9D2 /* NRPlayer.m */; };
 		509F5D1314FE87FD00905B07 /* NRPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 509F5D1214FE87FD00905B07 /* NRPlayerView.m */; };
 		50C44F8E14EFBC9F003B396A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50C44F8D14EFBC9F003B396A /* UIKit.framework */; };
 		50C44F9014EFBC9F003B396A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50C44F8F14EFBC9F003B396A /* Foundation.framework */; };
@@ -30,6 +31,8 @@
 		507E63FD14F771A500D38050 /* artwork.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = artwork.jpg; path = Resources/artwork.jpg; sourceTree = "<group>"; };
 		507E640314F771EC00D38050 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = Resources/icon.png; sourceTree = "<group>"; };
 		507E640414F771EC00D38050 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon@2x.png"; path = "Resources/icon@2x.png"; sourceTree = "<group>"; };
+		508EF46C14FEA90700B3F9D2 /* NRPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NRPlayer.h; sourceTree = "<group>"; };
+		508EF46D14FEA90700B3F9D2 /* NRPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NRPlayer.m; sourceTree = "<group>"; };
 		509F5D1114FE87FD00905B07 /* NRPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NRPlayerView.h; path = Views/NRPlayerView.h; sourceTree = "<group>"; };
 		509F5D1214FE87FD00905B07 /* NRPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NRPlayerView.m; path = Views/NRPlayerView.m; sourceTree = "<group>"; };
 		509F5D1414FE8EDA00905B07 /* NRViewDefinitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NRViewDefinitions.h; sourceTree = "<group>"; };
@@ -129,8 +132,10 @@
 			children = (
 				50C44F9C14EFBC9F003B396A /* NRAppDelegate.h */,
 				50C44F9D14EFBC9F003B396A /* NRAppDelegate.m */,
-				50C44F9414EFBC9F003B396A /* Supporting Files */,
+				508EF46C14FEA90700B3F9D2 /* NRPlayer.h */,
+				508EF46D14FEA90700B3F9D2 /* NRPlayer.m */,
 				509F5D1414FE8EDA00905B07 /* NRViewDefinitions.h */,
+				50C44F9414EFBC9F003B396A /* Supporting Files */,
 			);
 			path = Nashe;
 			sourceTree = "<group>";
@@ -216,6 +221,7 @@
 				50C44F9E14EFBC9F003B396A /* NRAppDelegate.m in Sources */,
 				5041522814F36105003C1BDA /* NRRootViewController.m in Sources */,
 				509F5D1314FE87FD00905B07 /* NRPlayerView.m in Sources */,
+				508EF46E14FEA90700B3F9D2 /* NRPlayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
